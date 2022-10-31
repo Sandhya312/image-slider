@@ -9,9 +9,9 @@ $(function() {
   
 function getIdsOfImages() {
     var values = [];
-    $('.listitemClass').each(function (index) {
+    $('.imageClass').each(function (index) {
         values.push($(this).attr("id")
-                .replace("imageNo", ""));
+                .replace("img", ""));
     });
       
     $('#outputvalues').val(values);
